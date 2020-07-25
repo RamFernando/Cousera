@@ -1,0 +1,84 @@
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Comic Sans MS", sans-serif;
+}
+
+h1{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 1.7em;
+}
+div#container{
+	position: relative;
+	text-align: center;
+	width: 100%;
+	margin-left: 35px;
+	margin-right: 35px;
+	padding: 10px;
+}
+
+.menu{
+	border: 1px solid black;
+	background: #C0C0C0;
+	margin: 10px;
+	float: left;
+	display: inline-block;
+}
+
+
+.menu-heading{
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	float: right;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	padding: 3px 10px 3px 10px;
+}
+p{
+	clear: right;
+	margin: 10px;
+	text-align: left;
+	padding: 5px 5px 5px 10px;
+}
+
+div:nth-child(1) h4{
+  background: pink;
+}
+
+div:nth-child(2) h4{
+  background: red;
+}
+
+div:nth-child(3) h4{
+  background: yellow;
+}
+
+/************** media queries *******************/
+@media(min-width: 992px){
+	.menu{
+		width: 30%;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+	#menu1{
+		width: 45%;
+	}
+	#menu2{
+		width: 45%;
+	}
+	#menu3{
+		width: 92%;
+	}
+}
+
+@media(max-width: 767px){
+	.menu{
+		float: none;
+		/*margin-right: 10px;*/
+	}
+}
